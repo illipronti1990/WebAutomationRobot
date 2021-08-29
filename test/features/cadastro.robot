@@ -1,5 +1,4 @@
 *** Settings ***
-
 Resource  ../../src/config/package.resource
 
 Test Setup    Abrir sessão
@@ -11,5 +10,7 @@ Cenario: Validar Cadastro com sucesso
     Dado que o cliente esteja na tela inicial da aplicação
     E acessar a tela de Login
     E acessar a tela de cadastro
-  
-    
+    E preencher o formulario com dados válidos
+    Quando clicar no elemento         ${CADASTRO.BOTAO_REGISTER}
+    Então deve visualizar a tela de MY ACCOUNT
+   

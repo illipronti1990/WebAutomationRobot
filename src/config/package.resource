@@ -3,7 +3,8 @@ Documentation   Dependências do projeto
 
 #Dependencias
 Library    SeleniumLibrary
-Library    FakerLibrary    locale:pt_br
+Library    FakerLibrary        locale=pt_br
+Library    DebugLibrary    
 
 
 #Keywords
@@ -18,6 +19,7 @@ Resource    ../auto/keywords/cadastro_kws.robot
 Resource    ../auto/elements/home_ets.resource
 Resource    ../auto/elements/login_ets.resource
 Resource    ../auto/elements/minha_conta_ets.resource
+Resource    ../auto/elements/cadastro_ets.resource
 
 
 #Dados
